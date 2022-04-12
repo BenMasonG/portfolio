@@ -1,0 +1,42 @@
+h1 {
+    color:red;
+}
+.example {
+    color: pink;
+}
+#example2 {
+    font-size: 12;
+    color: blueviolet;
+}
+#about-me > p {
+    color: aqua;
+}
+.placeholder1 ~ figcaption {
+    color: red
+}
+#picofme1 {
+    height: 300px;
+    width: 400px;
+}
+#box {
+    box-shadow: 0 0 0 3px green;
+}
+#box:checked {
+    box-shadow: 0 0 0 3px blue;
+}
+#box:checked + label {
+    color: green;
+}
+#socials > p:hover {
+color: red;
+}
+button:disabled {
+    border-style: dotted;
+    background-color: orangered;
+}
+#instagram:visited {
+    color:violet;
+}
+#facebook:active {
+    color: yellow;
+}
