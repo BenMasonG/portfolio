@@ -40,3 +40,19 @@ button:disabled {
 #facebook:active {
     color: yellow;
 }
+#hobbies li::first-letter {
+    color: red;
+}
+#hobbies li::marker {
+    font-size: 15px
+}
+#hobbies h4::after {
+    content: "";
+    background-color: palegoldenrod;
+    height: 20px;
+    width: 150px;
+    position: absolute;
+    left: 5px;
+    z-index: -1;
+}
+
