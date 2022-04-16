@@ -1,65 +1,108 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    max-width: 100%;
 }
-h1 {
-    color:red;
-    font-size: 30px
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 60px;
+    align-items: center;
+    color: purple;
 }
-a {
-    text-decoration:none ;
-}
-.example {
-    color: pink;
-}
-#example2 {
-    font-size: 12;
-    color: blueviolet;
-}
-#about-me > p {
-    color: aqua;
-}
-.placeholder1 ~ figcaption {
-    color: red
-}
-#picofme1 {
-    height: 300px;
-    width: 400px;
-}
-#box {
-    box-shadow: 0 0 0 3px green;
-}
-#box:checked {
-    box-shadow: 0 0 0 3px blue;
-}
-#box:checked + label {
-    color: green;
-}
-#socials > p:hover {
-color: red;
-}
-button:disabled {
-    border-style: dotted;
-    background-color: orangered;
-}
-#instagram:visited {
-    color:violet;
-}
-#facebook:active {
-    color: yellow;
-}
-#hobbies li::first-letter {
-    color: red;
-}
-#hobbies li::marker {
-    font-size: 15px
-}
-#hobbies h4::after {
-    content: "";
-    background-color: palegoldenrod;
-    height: 20px;
-    width: 150px;
-    position: absolute;
-    left: 5px;
-    z-index: -1;
+.navoption1 {
+   grid-column-start: 5;
 }
 
+.div1 {
+    background-color: white;
+    color: purple;
+    font-family: 'Courier New', Courier, monospace;
+}
+.div1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: space-around;
+    align-content: center;
+    height: 100vh;
+    justify-items: center;
+}
+
+#my-projects {
+    text-align: center;
+}
+
+.projects figure > img {
+    height: 241px;
+    width: 400px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.projects > figure {
+    margin: 30px auto;
+      padding: 0;
+      display: block;
+      position: relative;
+      overflow: hidden; /* hide overflowing elements by default */
+  }
+  .projects > figure > figcaption {
+	position: absolute;
+	display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	text-align: center;
+	background: white;
+	padding: 15px;
+	z-index: 100;
+	width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+	top: 50%;
+	left: 0;
+	-moz-transform: translate3d(-100%, -50%, 0); /* position caption outside layout horizontally and centered vertically */
+	-webkit-transform: translate3d(-100%, -50%, 0);
+	transform: translate3d(-100%, -50%, 0);
+	opacity: 0;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.projects > figure > img {
+	-moz-transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.projects > figure > figcaption {
+	top: 100%;
+	opacity: 1;
+	-moz-transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.projects > figure:hover > img {
+	-moz-transform: translate3d(0, -20px, 0); /* move image up vertically a bit for parallax effect */
+	-webkit-transform: translate3d(0, -20px, 0);
+	transform: translate3d(0, -20px, 0);
+  opacity: .5;
+ 
+}
+.projects > figure:hover > figcaption {
+	-moz-transform: translate3d(0, -100%, 0); /* move caption up vertically to fully reveal caption */
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+  box-shadow: 0px -2px 28px rgba(0, 0, 0, 0.3);
+}
