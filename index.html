@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="./styles.css"/>
         <title>Ben Mason</title>
     </head>
     <body>
@@ -10,27 +11,31 @@
     </nav>
         <h1>Ben Mason</h1>
         <figure>
-            <img src="./images/picofme1.jpg" alt="A picture of me">
+            <img id="picofme1" src="./images/picofme1.jpg" alt="A picture of me">
             <br />
             <figcaption>
                 A selfie of me taken in front of a waterfall in Wales.
             </figcaption>
-        </figure>
-        <h2>Learning code to improve my tomorrow</h2>
+        </figure>s
+        <h2 class="example">Learning code to improve my tomorrow</h2>
        </header>
         <br />
         <hr />
         <main>
-        <h3> About Me</h3>
+            <div id="about-me">
+        <h3 id="example2"> About Me</h3>
         <p>I aim to develop my coding skills to allow me to get a role as a junior developer</p>
         <P>I am learning to code using Manchester Codes curriclum and will suppliment with other learning material when necessary</P>
         <figure>
-            <img src=" "alt="A picture of me doing Muay Thai">
+            <img class="placeholder1" src="./images/placeholder1.jpg "alt="A picture of me doing Muay Thai">
             <br />
             <figcaption>
-                A picture of me doing Muay Thai.
+                A placeholder picture to test styling.
             </figcaption>
         </figure>
+        <div>
+            <p>Inserteed as part of CSS secion 5 test test combinator selectors</p>
+        </div>
         <figure>
             <img src=" "alt="A picture of me in Switzerland">
             <br />
@@ -51,9 +56,21 @@
             <li>Intelligent</li>
             <li>Adaptive</li>
         </ol>
+        </div>
     </main>
-
     <section>
+        <div id="socials">
+            <h3>My Socials</h3>
+            <p>Follow me on <a id="instagram" href="https://www.instagram.com/benjaminmasongallagher/" target="_blank">Instagram</a>!</p>
+            <p>Follow me on <a id="facebook" href="https://www.facebook.com/benjamin.masongallagher/" target="_blank">Facebook</a>!</p>
+            <input type="checkbox" id="box" name="test-checkbox" checked>
+            <label for="test-checkbox">Check this box fo some reason</label>
+            <button disabled>You can't press this..</button>
+            <p>Click the above links to view my social media accounts.</p>
+        </div>
+    </section>
+
+    <section id="hobbies">
         <h4>Hobbies & Interests</h4>
         <ul>
             <li>Muay Thai</li>
@@ -62,7 +79,10 @@
             <li>Hiking</li>
             <li>Formula 1</li>
         </ul>
+        <p> Below is a link to information about Muay Thai.</p>
+        <a href="https://en.wikipedia.org/wiki/Muay_Thai" target="_blank" data-anchor="sports">Muay Thai</a>
     </section>
+    <br />
         <footer> 2022 by Benjamin Mason-Gallagher </footer>
 
     </body>
